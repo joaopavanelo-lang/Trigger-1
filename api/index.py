@@ -11,15 +11,15 @@ HEADERS = {
     "Accept": "application/vnd.github+json"
 }
 
-# Lista de workflows a serem acionados
+# Lista de workflows a serem acionados (Ajustado para 'workflow' no singular para o loop funcionar)
 WORKFLOWS = [
-    {"repo": "QueueListLog", "workflows": "queuelistsp5.yaml"},
-    {"repo": "BasePending", "workflows": "main_expedicao.yaml"},
-    {"repo": "Base_Handedover", "workflows": "main_expedicao.yaml"},
-    {"repo": "Base_3PL", "workflows": "main_expedicao.yaml"},
-    {"repo": "base_transporting", "workflows": "main_base_to_Transporting.yaml"},
-    {"repo": "Queuelist", "workflows" : "queue_list_sp5.yml"},
-    {"repo": "base_inbound", "workflows" : "main_inbound.yaml"},
+    {"repo": "QueueListLog", "workflow": "queuelistsp5.yaml"},
+    {"repo": "BasePending", "workflow": "main_expedicao.yaml"},
+    {"repo": "Base_Handedover", "workflow": "main_expedicao.yaml"},
+    {"repo": "Base_3PL", "workflow": "main_expedicao.yaml"},
+    {"repo": "base_transporting", "workflow": "main_base_to_Transporting.yaml"},
+    {"repo": "Queuelist", "workflow" : "queue_list_sp5.yml"},
+    {"repo": "base_inbound", "workflow" : "main_inbound.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
@@ -32,7 +32,8 @@ def home():
 def trigger_workflows():
     # Loop que executa a lógica UMA VEZ por chamada
     for wf in WORKFLOWS:
-        url = f"https://api.github.com/repos/Murilosantana7/{wf['repo']}/actions/workflows/{wf['workflow']}/dispatches"
+        # ALTERAÇÃO: Usuário atualizado para joaopavanelo-lang
+        url = f"https://api.github.com/repos/joaopavanelo-lang/{wf['repo']}/actions/workflows/{wf['workflow']}/dispatches"
         data = {"ref": "main"}
         try:
             res = requests.post(url, headers=HEADERS, json=data)
