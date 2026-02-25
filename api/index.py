@@ -14,8 +14,8 @@ HEADERS = {
 # Lista de workflows a serem acionados
 WORKFLOWS = [
     {"repo": "QueueListLog", "workflows": "queuelistsp5.yaml"},
-    {"repo": "Base-Pending", "workflows": "main_expedicao.yaml"},
-    {"repo": "Base-Handeover", "workflows": "main_expedicao.yaml"},
+    {"repo": "BasePending", "workflows": "main_expedicao.yaml"},
+    {"repo": "Base_Handedover", "workflows": "main_expedicao.yaml"},
     {"repo": "Base_3PL", "workflows": "main_expedicao.yaml"},
     {"repo": "base_transporting", "workflows": "main_base_to_Transporting.yaml"},
     {"repo": "Queuelist", "workflows" : "queue_list_sp5.yml"},
