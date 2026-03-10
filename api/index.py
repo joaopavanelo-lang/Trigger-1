@@ -20,6 +20,7 @@ WORKFLOWS = [
     {"repo": "Base_Packed_FerramentaFIFO", "workflow" : "main_base_to_packed.yaml"},
     {"repo": "Queuelist", "workflow" : "queue_list_sp5.yml"},
     {"repo": "base_inbound", "workflow" : "main_inbound.yaml"},
+    {"repo": "Base-ended", "workflow" : "main_ended.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
