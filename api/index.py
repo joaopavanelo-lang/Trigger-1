@@ -18,7 +18,7 @@ WORKFLOWS = [
     # {"repo": "Base_Handedover", "workflow": "main_expedicao.yaml"},
     # {"repo": "Base_3PL", "workflow": "main_expedicao.yaml"},
     # {"repo": "Base_Packed_FerramentaFIFO", "workflow" : "main_base_to_packed.yaml"},
-    # {"repo": "Queuelist", "workflow" : "queue_list_sp5.yml"},
+     {"repo": "Queue_list_sp25", "workflow" : "queue_list_sp25.yml"},
      {"repo": "base_inbound_sp25", "workflow" : "main_inbound.yaml"},
     # {"repo": "Base-ended", "workflow" : "main_ended.yaml"},
 ]
