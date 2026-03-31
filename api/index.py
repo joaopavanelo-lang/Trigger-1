@@ -13,14 +13,14 @@ HEADERS = {
 
 # Lista de workflows a serem acionados (Ajustado para 'workflow' no singular para o loop funcionar)
 WORKFLOWS = [
-    # {"repo": "QueueListLog", "workflow": "queuelistsp5.yaml"},
-    # {"repo": "BasePending", "workflow": "main_expedicao.yaml"},
-    # {"repo": "Base_Handedover", "workflow": "main_expedicao.yaml"},
-    # {"repo": "Base_3PL", "workflow": "main_expedicao.yaml"},
-    # {"repo": "Base_Packed_FerramentaFIFO", "workflow" : "main_base_to_packed.yaml"},
+     {"repo": "QueueListLog", "workflow": "queuelistsp5.yaml"},
+     {"repo": "BasePending", "workflow": "main_expedicao.yaml"},
+     {"repo": "Base_Handedover", "workflow": "main_expedicao.yaml"},
+     {"repo": "Base_3PL", "workflow": "main_expedicao.yaml"},
+     {"repo": "Base_Packed_FerramentaFIFO", "workflow" : "main_base_to_packed.yaml"},
      {"repo": "Queue_list_sp25", "workflow" : "queue_list_sp25.yml"},
      {"repo": "base_inbound_sp25", "workflow" : "main_inbound.yaml"},
-    # {"repo": "Base-ended", "workflow" : "main_ended.yaml"},
+     {"repo": "Base-ended", "workflow" : "main_ended.yaml"},
 ]
 
 # Rota principal para verificar se o app está no ar
